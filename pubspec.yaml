@@ -1,0 +1,27 @@
+name: project_f_security
+description: Aplikasi Keamanan Project F
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Paket Utama Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1       # Menangani OTP (Phone) dan Email/Password
+  cloud_firestore: ^5.4.4     # Database untuk menyimpan data User/Laporan
+  
+  # Ikon Tambahan (Opsional)
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
